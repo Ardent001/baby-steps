@@ -1,4 +1,3 @@
-from cgitb import html
 import request as kind
 
 url_input = input('Webpage to grab source from: ')
