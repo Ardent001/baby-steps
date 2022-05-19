@@ -1,10 +1,7 @@
 import request as kind
 
-url_input = input('Webpage to grab source from: ')
-url_output = input('Name for html file: ')
+url = input('Webpage to grab source from: ')
 
-req = kind.get(url, 'html.parser')
+req = kind.get(url)
 
-with open(url_output, 'w') as url:
-    url.write(req.text)
-    url.close()
+print(req.text)
